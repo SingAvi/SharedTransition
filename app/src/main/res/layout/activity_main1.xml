@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dedddd"
+    tools:context="com.avinash_singh.sharetransitions.Main1">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:id="@+id/CardView"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:backgroundTint="#000000">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:id="@+id/ProfileImage"
+                android:layout_marginLeft="5dp"
+                android:transitionName="ProfileImage"
+                android:src="@drawable/profileimage" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beard Man"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:transitionName="Name"
+                android:layout_toRightOf="@+id/ProfileImage"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ProfileDetails"
+                android:layout_below="@+id/Name"
+                android:textColor="#fff"
+                android:transitionName="NameDetails"
+                android:layout_toRightOf="@+id/ProfileImage"
+                android:layout_marginLeft="5dp"
+                android:text="Vlogger and Chef"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the card view to open profile view"
+        android:textColor="#505050"
+        android:id="@+id/Press"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>
