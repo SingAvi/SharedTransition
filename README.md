@@ -12,8 +12,10 @@ dependencies {
 Note
 ----
 Under res > values > styles 
-    - Add a item 
-        - This enables window transition in the android application
+    - Add a item
+    
+    This enables window transition in the android application
+    
         ```
              <item name="android:windowActivityTransitions">true</item>
         ```
