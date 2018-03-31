@@ -11,12 +11,12 @@ dependencies {
 
 Note
 ----
-1.Under res > values > styles 
+1.Under res > values > styles
+
+            <item name="android:windowActivityTransitions">true</item>
+            
     
-    - This enables window transition in the android application
-   
-    <item name="android:windowActivityTransitions">true</item>
-   
+   > Enables Window Acitvity Transition
      
 2.Try keeping the transition name in the Xml layout commom between both the layout in which you are trying animate. 
        
